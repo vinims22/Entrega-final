@@ -1,0 +1,5 @@
+{
+  "name": "digimon-pwa-ci-fix",
+  "version": "1.0.0",
+  "description": "Arquivo criado apenas para satisfazer o setup do Node no GitHub Actions."
+}
