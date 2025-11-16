@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon-API</title>
+    <link rel="manifest" href="manifest.webmanifest"/>
+    <meta name="theme-color" content="#38055D">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+            <h1> DigiAPI</h1>
+            <p> Pesquise os diferentes Digimons!</p>
+        
+    </header>
+    
+    <main id="app"> 
+        <p>Carregando...</p>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/sw.js').catch(console.error);
+                   }
+    </script>
+</body>
+</html>

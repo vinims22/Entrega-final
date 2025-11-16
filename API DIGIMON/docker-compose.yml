@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+
+  web:
+  
+    build:
+      context: . 
+      dockerfile: docker/Dockerfile.web
+    
+  
+    ports:
+      - "8080:80"
+    
+    container_name: digimon-explorer-web
+    
+    restart: unless-stopped
+    
+
+  api:
+    image: busybox
+  
+    command: echo "Serviço API Placeholder"
